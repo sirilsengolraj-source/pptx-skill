@@ -1,6 +1,6 @@
 ---
 name: powerpoint-deck-builder
-description: "Build, edit, verify, or iterate polished PowerPoint `.pptx` slide decks and presentations from structured `outline.json` or saved workspaces. Use for editable deck generation, presentation design, source-backed assets, optional generated-image slides, alignment QA, overflow/overlap checks, and reusable deck workspaces. Legacy repo/install name: `pptx-skill`."
+description: "PowerPoint skill and PPTX skill for building, editing, verifying, or iterating polished presentations, slides, and slide decks from structured `outline.json` or saved workspaces. Use for editable deck generation, presentation design, source-backed assets, optional generated-image slides, alignment QA, overflow/overlap checks, and reusable deck workspaces. Legacy repo/install name: `pptx-skill`."
 ---
 
 # PowerPoint Deck Builder
@@ -11,6 +11,9 @@ rendering, staging, and verification.
 
 Call this skill as `powerpoint-deck-builder`. The repository and local install
 folder may still be named `pptx-skill` for compatibility.
+
+Search aliases: PowerPoint skill, PPTX skill, presentation skill, slide deck
+generator, slides generator, deck builder, presentation generator.
 
 ## Non-Negotiables
 

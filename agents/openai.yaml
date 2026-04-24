@@ -1,6 +1,6 @@
 interface:
   display_name: "PowerPoint Deck Builder"
-  short_description: "Build, edit, and QA polished PowerPoint .pptx slide decks from structured outlines or saved workspaces"
+  short_description: "PowerPoint/PPTX skill for building, editing, and QA-checking polished presentations, slides, and decks"
   default_prompt: |
     Use `powerpoint-deck-builder` to create or revise this deck as a polished .pptx.
 
