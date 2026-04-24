@@ -1,8 +1,8 @@
 interface:
-  display_name: "pptx-skill"
-  short_description: "Repo-native .pptx skill with pptxgenjs-first generation, saved workspaces, source-backed/generated assets, and a three-step QA gate"
+  display_name: "PowerPoint Deck Builder"
+  short_description: "Build, edit, and QA polished PowerPoint .pptx slide decks from structured outlines or saved workspaces"
   default_prompt: |
-    Use `pptx-skill` to create or revise this deck as a polished .pptx.
+    Use `powerpoint-deck-builder` to create or revise this deck as a polished .pptx.
 
     Hard rules (do not violate):
     - Never write inline python-pptx or pptxgenjs. Express the deck as

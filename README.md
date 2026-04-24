@@ -1,15 +1,16 @@
-# pptx-skill
+# PowerPoint Deck Builder Skill
 
-Open-source PowerPoint skill for Codex-style agent workflows. It builds
-editable `.pptx` decks from structured source files, with a focus on clean
-alignment, readable layouts, reusable workspaces, and repeatable verification.
+Open-source Codex skill for building, editing, and verifying editable
+PowerPoint `.pptx` slide decks. It turns structured source files into polished
+presentations with clean alignment, readable layouts, reusable workspaces, and
+repeatable QA.
 
-Call the skill as `pptx-skill` to avoid collisions with bundled slide or PPTX
-skills.
+Call the skill as `powerpoint-deck-builder`. The GitHub repo and local install
+folder can remain `pptx-skill` for compatibility.
 
 ## What It Does
 
-- Builds `.pptx` files from `outline.json` using the repo-owned `pptxgenjs`
+- Builds PowerPoint `.pptx` files from `outline.json` using the repo-owned `pptxgenjs`
   renderer by default.
 - Falls back to the Python renderer for variants that need `python-pptx`
   features, such as charts and image-sidebar layouts.
@@ -28,6 +29,10 @@ Clone or copy this repo into:
 ```bash
 $CODEX_HOME/skills/pptx-skill
 ```
+
+Agents should trigger it for requests involving PowerPoint, PPTX, slide decks,
+presentation design, deck generation, deck editing, layout QA, or reusable
+presentation workspaces.
 
 Install dependencies once from the repo root:
 
