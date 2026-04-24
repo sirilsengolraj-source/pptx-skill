@@ -1,0 +1,64 @@
+{
+  "workspace_version": 1,
+  "deck_title": "Power and Coal",
+  "deck_slug": "power-and-coal",
+  "build": {
+    "style_preset": "executive-clinical",
+    "font_pair": "editorial_serif_v1",
+    "palette_key": "energy_sunset_v1",
+    "output_pptx": "build/power-and-coal.pptx",
+    "qa_dir": "build/qa",
+    "qa_report": "build/qa/report.json"
+  },
+  "layout_rules": {
+    "alignment_first": true,
+    "zero_overlap_required": true,
+    "title_subtitle_stack_dynamic": true,
+    "footer_safe_region_required": true,
+    "cards_use_measured_text_fit": true
+  },
+  "preset_tokens": {
+    "name": "executive-clinical",
+    "palette": {
+      "bg_primary": "F4F8FB",
+      "bg_dark": "071E3A",
+      "surface": "FFFFFF",
+      "text_primary": "0F172A",
+      "text_muted": "475569",
+      "accent_primary": "1493A4",
+      "accent_secondary": "F59E0B",
+      "line": "D5DEE8"
+    },
+    "typography": {
+      "title_max": 44,
+      "title_min": 34,
+      "section_max": 30,
+      "section_min": 24,
+      "body_max": 22,
+      "body_min": 15,
+      "caption_max": 14,
+      "caption_min": 11
+    },
+    "layout": {
+      "margin_x": 0.7,
+      "top_safe": 0.95,
+      "bottom_safe": 0.35,
+      "gutter": 0.28,
+      "rhythm": 0.24,
+      "rail_height": 0.1,
+      "radius_style": "rounded-rectangle",
+      "edge_tolerance": 0.06,
+      "gutter_tolerance": 0.06,
+      "max_density": 0.78,
+      "max_empty_ratio": 0.62
+    },
+    "allowed_layout_families": [
+      "hero-opener",
+      "card-grid",
+      "split-panel",
+      "timeline",
+      "process-flow",
+      "closing-summary"
+    ]
+  }
+}

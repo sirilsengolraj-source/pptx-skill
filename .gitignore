@@ -1,0 +1,35 @@
+# Generated example decks and comparison outputs
+examples/**/*.pptx
+examples/**/*.pdf
+
+# Generated deck-workspace outputs
+decks/**/assets/staged/**
+!decks/**/assets/staged/.gitkeep
+decks/**/assets/generated/**
+!decks/**/assets/generated/.gitkeep
+decks/**/assets/attribution.csv
+decks/**/build/**
+!decks/**/build/.gitkeep
+
+# Local runtime / telemetry
+node_modules/
+.skill_telemetry/
+
+# Local scratch helper bundles. Keep the public repo on repo-owned code plus
+# declared npm dependencies.
+templates/pptxgenjs/helpers/
+
+# QA / debug artifacts
+*.issues.json
+*.visual.json
+*.design.json
+*.report.json
+*.layout_lint.json
+
+# Common render outputs
+rendered/
+montage.png
+
+# Local OS / Python noise
+.DS_Store
+**/__pycache__/

@@ -1,0 +1,66 @@
+interface:
+  display_name: "pptx-skill"
+  short_description: "Repo-native .pptx skill with pptxgenjs-first generation, saved workspaces, source-backed/generated assets, and a three-step QA gate"
+  default_prompt: |
+    Use `pptx-skill` to create or revise this deck as a polished .pptx.
+
+    Hard rules (do not violate):
+    - Never write inline python-pptx or pptxgenjs. Express the deck as
+      outline.json per `references/outline_schema.md` and invoke a script
+      under `scripts/`.
+    - Never skip the three-step verification: (1) `scripts/qa_gate.py` for
+      geometry, (2) visual-subagent inspection of rendered JPGs using the
+      prompt from `references/visual_qa_prompt.md`, (3) placeholder-text
+      grep via `python -m markitdown out.pptx | grep -iE "..."`. Do not
+      declare done until at least one fix-and-verify cycle has completed.
+    - Never run `pip install` or `npm install` inside this task. Assume
+      the environment is provisioned; if a dep is missing, stop and report.
+    - Never invent a renderer. Use build_workspace.py (auto-picks
+      pptxgenjs by default) or build_deck_pptxgenjs.js directly; use
+      build_deck.py only for chart or image-sidebar variants.
+    - Never rebuild from outline when the user only wants a text edit on
+      an existing deck. Use edit_deck.py (list-slides / replace-text /
+      delete-slide). Use unpack_pptx.py + pack_pptx.py for XML-level edits.
+
+    Renderer choice:
+    - pptxgenjs (default) — richer typography on timeline, hero,
+      comparison, cards, stats, kpi-hero, table, section dividers.
+      Handles mermaid_source and hero_image natively.
+    - python-pptx (build_deck.py) — auto-selected only when the outline
+      uses `chart` or `image-sidebar` variants. Do not force with
+      `--renderer python`; it silently downgrades typography.
+
+    Defaults:
+    - Read DESIGN.md before drafting. For workspaces, use
+      content_plan.json for story/visual strategy and evidence_plan.json
+      for sourced claims before writing outline.json.
+    - Prioritize alignment, readable hierarchy, footer-safe spacing, and
+      zero overlaps or overflows. Alignment is a first-order constraint.
+    - Prefer the workspace workflow only when the deck will be iterated
+      later. For one-shot 5-10 slide primers, the quick-deck path
+      (outline.json + direct pptxgenjs invocation) is cleaner.
+    - Prefer source-backed imagery and staged chart/fact assets over ad
+      hoc downloads. React-icons slugs (`fa6:FaX`) resolve automatically
+      in `assets.icons` — no staging step required.
+    - Use generated imagery only when deliberate. It requires
+      `--allow-generated-images` plus OPENAI_API_KEY, and should land on a
+      standalone `variant: generated-image` slide with prompt/model/purpose
+      metadata visible.
+    - Run iterate_deck.py (max 3 loops) if the gate fails; do not
+      silently ship.
+
+    Before declaring done, confirm: outline exists as JSON, build was
+    done via a repo script, the three QA steps all ran (gate passed,
+    visual subagent returned zero issues or you've completed a
+    fix-and-verify cycle, placeholder grep matched nothing), and no
+    package installs were run during the task.
+
+policy:
+  allow_implicit_invocation: true
+
+dependencies:
+  tools:
+    - python3
+    - soffice          # LibreOffice, for render-based QA
+    - pdftoppm         # Poppler, for render-based QA
+    - node             # for the pptxgenjs renderer (default)

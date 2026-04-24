@@ -1,0 +1,139 @@
+{
+  "title": "Power and Coal",
+  "subtitle": "Coal-fired generation: operating role, pressure points, and transition choices",
+  "deck_style": {
+    "visual_density": "medium",
+    "emoji_mode": "none",
+    "font_pair": "editorial_serif_v1",
+    "palette_key": "energy_sunset_v1"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "Power and Coal",
+      "subtitle": "Coal-fired generation: operating role, pressure points, and transition choices"
+    },
+    {
+      "type": "content",
+      "variant": "split",
+      "slide_intent": "message",
+      "visual_intent": "comparison",
+      "title": "Why coal still matters in some grids",
+      "subtitle": "Its operating role can outlast its investment appeal",
+      "bullets": [
+        "Coal units can deliver bulk generation on demand, with fuel stored on site rather than arriving in real time.",
+        "Existing plants, mines, rail links, and transmission corridors create economic inertia around the installed base.",
+        "Where gas, hydro, or storage options are limited, coal can remain a reliability hedge during stressed periods."
+      ],
+      "highlights": [
+        "Dispatchable output",
+        "On-site fuel inventory",
+        "High sunk-cost fleet"
+      ],
+      "footer": "System value depends on plant age, fuel logistics, and available replacements"
+    },
+    {
+      "type": "content",
+      "variant": "cards-3",
+      "slide_intent": "process",
+      "visual_intent": "comparison",
+      "title": "How coal becomes electricity",
+      "subtitle": "Fuel handling, steam cycle, and plant balance must stay coordinated",
+      "cards": [
+        {
+          "title": "Fuel Handling",
+          "body": "Coal is delivered, stored, crushed, and fed into the boiler at a controlled rate.",
+          "accent": "accent_primary"
+        },
+        {
+          "title": "Steam Cycle",
+          "body": "Combustion heats water into steam that spins the turbine and generator set.",
+          "accent": "accent_secondary"
+        },
+        {
+          "title": "Plant Balance",
+          "body": "Cooling, controls, and emissions equipment must all stay in step to keep the unit online.",
+          "accent": "accent_primary"
+        }
+      ],
+      "footer": "Performance depends on fuel quality, maintenance discipline, and thermal efficiency"
+    },
+    {
+      "type": "content",
+      "variant": "matrix",
+      "slide_intent": "evidence",
+      "visual_intent": "comparison",
+      "title": "Why coal is under pressure",
+      "subtitle": "The burden is cumulative, not singular",
+      "quadrants": [
+        {
+          "title": "Cost Stack",
+          "body": "Older units carry heavier maintenance, outage risk, and heat-rate penalties than newer alternatives."
+        },
+        {
+          "title": "Environmental Burden",
+          "body": "Ash, sulfur, nitrogen oxides, mercury, and carbon all add control, monitoring, and disposal cost."
+        },
+        {
+          "title": "Flexibility Gap",
+          "body": "Large steam units ramp slower and lose efficiency when cycled to follow variable renewables."
+        },
+        {
+          "title": "Capital Access",
+          "body": "Capital and policy support increasingly favor cleaner replacement assets over long-life coal retrofits."
+        }
+      ],
+      "footer": "The challenge is rarely one issue alone; it is the combined operating burden"
+    },
+    {
+      "type": "content",
+      "variant": "timeline",
+      "slide_intent": "process",
+      "visual_intent": "timeline",
+      "title": "Transition usually moves in stages",
+      "subtitle": "The path from dependence to replacement is operational",
+      "milestones": [
+        {
+          "label": "1",
+          "title": "Stabilize Critical Units",
+          "body": "Protect availability, secure fuel supply, and focus maintenance on plants the grid still depends on."
+        },
+        {
+          "label": "2",
+          "title": "Improve Flexibility",
+          "body": "Lower minimum stable load, tighten controls, and reduce avoidable emissions where the units must stay."
+        },
+        {
+          "label": "3",
+          "title": "Build Replacement Capacity",
+          "body": "Add cleaner firm capacity, storage, transmission, and demand flexibility to absorb coal's system role."
+        },
+        {
+          "label": "4",
+          "title": "Retire or Repurpose Sites",
+          "body": "Use existing interconnections, land, and workforce as transition assets instead of abandoning them."
+        }
+      ],
+      "footer": "Sequence varies by market design, policy, and what replacement options are actually buildable"
+    },
+    {
+      "type": "content",
+      "variant": "split",
+      "slide_intent": "decision",
+      "visual_intent": "comparison",
+      "title": "Replace the function, not the plant",
+      "subtitle": "Coal exits cleanly only when its system duties move first",
+      "bullets": [
+        "Start from the service the unit provides: energy, capacity, reserves, inertia, voltage support, or local support.",
+        "Decide which services are cheaper to preserve, retrofit, or replace with a cleaner resource mix.",
+        "Retire plants only after replacement capacity, fuel security, and grid upgrades are credible in operations."
+      ],
+      "highlights": [
+        "Replace functions first",
+        "Protect reliability",
+        "Reuse sites where possible"
+      ],
+      "footer": "Pragmatic transitions move system duties first and plant closures second"
+    }
+  ]
+}

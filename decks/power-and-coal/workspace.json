@@ -1,0 +1,13 @@
+{
+  "workspace_version": 1,
+  "deck_title": "Power and Coal",
+  "deck_slug": "power-and-coal",
+  "style_contract": "style_contract.json",
+  "outline": "outline.json",
+  "asset_plan": "asset_plan.json",
+  "notes": "notes.md",
+  "assets_dir": "assets",
+  "staged_assets_dir": "assets/staged",
+  "build_dir": "build",
+  "reference_pptx": null
+}

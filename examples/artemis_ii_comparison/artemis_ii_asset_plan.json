@@ -1,0 +1,55 @@
+{
+  "topic": "Artemis II mission",
+  "images": [
+    {
+      "name": "crew_portrait",
+      "wikimedia_query": "Artemis 2 Crew Portrait",
+      "allow_sharealike": true
+    }
+  ],
+  "backgrounds": [],
+  "charts": [
+    {
+      "name": "mission_profile",
+      "title": "Artemis II major mission events by elapsed day",
+      "type": "line",
+      "series": [
+        {
+          "name": "Elapsed day",
+          "labels": ["Launch", "Outbound burn", "Lunar flyby", "Splashdown"],
+          "values": [0, 2, 5, 10]
+        }
+      ],
+      "options": {
+        "catAxisTitle": "Mission event",
+        "valAxisTitle": "Elapsed day",
+        "showLegend": false
+      },
+      "facts": [
+        {
+          "value": "10",
+          "label": "Mission days",
+          "detail": "Apr 1 to Apr 10, 2026.",
+          "source": "NASA mission release"
+        },
+        {
+          "value": "252,756",
+          "label": "Miles from Earth",
+          "detail": "Maximum mission distance.",
+          "source": "NASA Artemis II release"
+        },
+        {
+          "value": "7,000+",
+          "label": "Images captured",
+          "detail": "Lunar flyby imagery.",
+          "source": "NASA Artemis II release"
+        }
+      ],
+      "sources": [
+        "NASA Artemis II mission release, April 10, 2026",
+        "NASA Artemis II timeline update"
+      ],
+      "notes": "Elapsed day compresses the mission into one sourced operational profile."
+    }
+  ]
+}
