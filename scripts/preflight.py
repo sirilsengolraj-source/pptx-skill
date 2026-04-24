@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fast pre-build linter for pptx-skill outlines.
+"""Fast pre-build linter for presentation-skill outlines.
 
 Runs static checks on outline.json in <1s to catch common authoring errors
 before the slow build+render cycle (~60s) in build_workspace.py --qa.
@@ -1262,7 +1262,7 @@ def _summary_to_stderr(issues: list[dict[str, Any]], error_count: int, warning_c
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Static preflight linter for pptx-skill outlines.")
+    parser = argparse.ArgumentParser(description="Static preflight linter for presentation-skill outlines.")
     parser.add_argument("--outline", required=True, help="Path to outline.json.")
     parser.add_argument(
         "--strict",

@@ -1,12 +1,12 @@
-# PowerPoint Deck Builder Skill
+# presentation-skill
 
-Open-source PowerPoint skill and PPTX skill for Codex agents. It builds,
-edits, and verifies editable presentations, slides, and `.pptx` slide decks
-from structured source files, with clean alignment, readable layouts, reusable
-workspaces, and repeatable QA.
+Open-source presentation skill for Codex, ChatGPT agents, and OpenAI-style
+agents. It builds, edits, and verifies editable PowerPoint `.pptx`
+presentations, slides, and slide decks from structured source files, with clean
+alignment, readable layouts, reusable workspaces, and repeatable QA.
 
-Call the skill as `powerpoint-deck-builder`. The GitHub repo and local install
-folder can remain `pptx-skill` for compatibility.
+Call the skill as `presentation-skill`. Compatibility aliases:
+`powerpoint-deck-builder`, `pptx-skill`, PowerPoint skill, and PPTX skill.
 
 ## What It Does
 
@@ -27,12 +27,12 @@ folder can remain `pptx-skill` for compatibility.
 Clone or copy this repo into:
 
 ```bash
-$CODEX_HOME/skills/pptx-skill
+$CODEX_HOME/skills/presentation-skill
 ```
 
-Agents should trigger it for requests involving PowerPoint, PPTX, slide decks,
-presentation design, deck generation, deck editing, layout QA, or reusable
-presentation workspaces.
+Codex, ChatGPT agents, and other OpenAI-style agents should trigger it for
+requests involving PowerPoint, PPTX, slide decks, slides, presentation design,
+deck generation, deck editing, layout QA, or reusable presentation workspaces.
 
 Search aliases: PowerPoint skill, PPTX skill, presentation skill, slide deck
 generator, slides generator, deck builder, presentation generator.

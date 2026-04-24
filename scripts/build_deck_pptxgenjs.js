@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * pptxgenjs peer renderer for the pptx-skill outline.json format.
+ * pptxgenjs peer renderer for the presentation-skill outline.json format.
  *
  * Reads the same outline.json as scripts/build_deck.py and emits a .pptx
  * using pptxgenjs directly -- no Playwright and no html2pptx.
@@ -400,7 +400,7 @@ function renderSlide(pptx, pSlide, slide, preset) {
 
 // Shared cache dir — icon PNGs are content-addressable (same slug+color+size
 // → same PNG), so sharing across slides and across runs is safe.
-const ICON_CACHE_DIR = path.join(os.tmpdir(), 'pptx-skill-icon-cache');
+const ICON_CACHE_DIR = path.join(os.tmpdir(), 'presentation-skill-icon-cache');
 
 function iconCacheKey(slug, color, size) {
   // Filesystem-safe filename: replace ':' → '__', '#' → '', lowercase.

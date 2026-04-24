@@ -15,7 +15,7 @@ from typing import Any
 
 
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
-USER_AGENT = "pptx-skill/1.0 (+local deck asset staging)"
+USER_AGENT = "presentation-skill/1.0 (+local deck asset staging)"
 STRIP_TAGS_RE = re.compile(r"<[^>]+>")
 ALLOWED_MIME = {"image/jpeg": ".jpg", "image/png": ".png"}
 

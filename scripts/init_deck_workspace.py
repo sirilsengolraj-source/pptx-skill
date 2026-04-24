@@ -274,7 +274,7 @@ connected to the staging plan yet.
 def _content_plan_stub(title: str) -> dict[str, Any]:
     return {
         "topic": title,
-        "audience": "Deck author using the pptx-skill workspace scaffold.",
+        "audience": "Deck author using the presentation-skill workspace scaffold.",
         "objective": "Replace the starter content with topic-specific narrative, evidence, and assets.",
         "thesis": "A reliable deck starts with a content plan, sourced evidence, staged visuals, and QA before delivery.",
         "narrative_arc": [
@@ -478,7 +478,7 @@ def _is_under_decks_dir(path: Path) -> tuple[bool, str | None]:
     """
     resolved = path.resolve()
     for ancestor in resolved.parents:
-        if ancestor.name == "decks" and ancestor.parent.name == "pptx-skill":
+        if ancestor.name == "decks" and ancestor.parent.name in {"presentation-skill", "pptx-skill"}:
             # Immediate child of decks/ is the source workspace slug.
             try:
                 rel = resolved.relative_to(ancestor)

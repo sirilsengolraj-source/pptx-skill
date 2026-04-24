@@ -1,16 +1,16 @@
 ---
-name: powerpoint-deck-builder
-description: "PowerPoint skill and PPTX skill for building, editing, verifying, or iterating polished presentations, slides, and slide decks from structured `outline.json` or saved workspaces. Use for editable deck generation, presentation design, source-backed assets, optional generated-image slides, alignment QA, overflow/overlap checks, and reusable deck workspaces. Legacy repo/install name: `pptx-skill`."
+name: presentation-skill
+description: "Presentation skill for Codex, ChatGPT agents, and OpenAI-style agents that build, edit, verify, or iterate polished PowerPoint `.pptx` presentations, slides, and slide decks from structured `outline.json` or saved workspaces. Use for editable deck generation, presentation design, source-backed assets, optional generated-image slides, alignment QA, overflow/overlap checks, and reusable deck workspaces. Aliases: `powerpoint-deck-builder`, `pptx-skill`, PowerPoint skill, PPTX skill."
 ---
 
-# PowerPoint Deck Builder
+# Presentation Skill
 
 Repo-native PowerPoint skill for editable, aligned, QA-checked `.pptx`
 decks. The model plans the story and visual strategy; scripts handle fragile
 rendering, staging, and verification.
 
-Call this skill as `powerpoint-deck-builder`. The repository and local install
-folder may still be named `pptx-skill` for compatibility.
+Call this skill as `presentation-skill`. Compatibility aliases:
+`powerpoint-deck-builder` and `pptx-skill`.
 
 Search aliases: PowerPoint skill, PPTX skill, presentation skill, slide deck
 generator, slides generator, deck builder, presentation generator.

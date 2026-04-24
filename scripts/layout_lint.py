@@ -714,7 +714,7 @@ def _args() -> argparse.Namespace:
         action="store_true",
         help=(
             "Escalate stats_value_non_numeric findings from warning to error "
-            "(Bug 2 in pptx-skill renderer fixes)."
+            "(Bug 2 in presentation-skill renderer fixes)."
         ),
     )
     return parser.parse_args()

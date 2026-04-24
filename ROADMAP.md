@@ -1,4 +1,4 @@
-# pptx-skill Improvement Plan
+# presentation-skill Improvement Plan
 
 This roadmap keeps improvement loops concrete and publishable. Each loop should
 ship only after the saved-workspace example builds and passes QA.

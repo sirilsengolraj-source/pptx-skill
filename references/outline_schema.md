@@ -139,7 +139,7 @@ element count are ignored.
 The react-icons path is zero-config — no staging, no PNGs on disk for
 Codex to produce. Prefer it over bare names unless you specifically want
 to use a custom locally-staged image. Icons are cached per
-slug+color+size in `$TMPDIR/pptx-skill-icon-cache/` across runs.
+slug+color+size in `$TMPDIR/presentation-skill-icon-cache/` across runs.
 
 **Custom color per slide**: add `assets.icons_color` as a hex string
 (`"icons_color": "F59E0B"`) to override the preset accent.

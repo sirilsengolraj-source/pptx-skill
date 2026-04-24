@@ -1,8 +1,8 @@
 interface:
-  display_name: "PowerPoint Deck Builder"
-  short_description: "PowerPoint/PPTX skill for building, editing, and QA-checking polished presentations, slides, and decks"
+  display_name: "presentation-skill"
+  short_description: "Presentation/PPTX skill for Codex and ChatGPT agents that build, edit, and QA polished slides and decks"
   default_prompt: |
-    Use `powerpoint-deck-builder` to create or revise this deck as a polished .pptx.
+    Use `presentation-skill` to create or revise this deck as a polished .pptx.
 
     Hard rules (do not violate):
     - Never write inline python-pptx or pptxgenjs. Express the deck as
