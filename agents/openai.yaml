@@ -1,0 +1,76 @@
+interface:
+  display_name: "presentation-skill"
+  short_description: "Presentation/PPTX skill for Codex and ChatGPT agents that build, edit, and QA polished slides and decks"
+  default_prompt: |
+    Use `presentation-skill` to create or revise this deck as a polished .pptx.
+
+    Hard rules (do not violate):
+    - Never write inline python-pptx or pptxgenjs. Express the deck as
+      outline.json per `references/outline_schema.md` and invoke a script
+      under `scripts/`.
+    - Never skip verification for a deliverable deck: (1) `scripts/qa_gate.py`
+      for geometry/design, (2) `scripts/visual_review.py` or
+      `qa_gate.py --run-visual-review` when render tools are available for
+      contact-sheet and wrap/rhythm findings, (3) optional fresh-eyes
+      inspection of rendered JPGs using `references/visual_qa_prompt.md`,
+      (4) placeholder-text grep via
+      `python -m markitdown out.pptx | grep -iE "..."`. If any issue is
+      found, fix source and rerun the affected checks before declaring done.
+    - Never run `pip install` or `npm install` inside this task. Assume
+      the environment is provisioned; if a dep is missing, stop and report.
+    - Never invent a renderer. Use build_workspace.py (auto-picks
+      pptxgenjs by default) or build_deck_pptxgenjs.js directly; use
+      build_deck.py only for chart variants.
+    - Never rebuild from outline when the user only wants a text edit on
+      an existing deck. Use edit_deck.py (list-slides / replace-text /
+      delete-slide). Use unpack_pptx.py + pack_pptx.py for XML-level edits.
+
+    Renderer choice:
+    - pptxgenjs (default) — richer typography on timeline, hero,
+      scientific-figure, image-sidebar, lab-run-results, comparison,
+      cards, stats, kpi-hero, table, section dividers. Handles
+      mermaid_source and hero_image natively.
+    - python-pptx (build_deck.py) — auto-selected only when the outline
+      uses `chart` variants. Do not force with
+      `--renderer python`; it silently downgrades typography.
+
+    Defaults:
+    - Read DESIGN.md before drafting. For workspaces, use
+      content_plan.json for story/visual strategy and evidence_plan.json
+      for sourced claims before writing outline.json.
+    - Prioritize alignment, readable hierarchy, footer-safe spacing, and
+      zero overlaps or overflows. Alignment is a first-order constraint.
+    - Prefer the workspace workflow only when the deck will be iterated
+      later. For one-shot 5-10 slide primers, the quick-deck path
+      (outline.json + direct pptxgenjs invocation) is cleaner.
+    - Prefer source-backed imagery and staged chart/fact assets over ad
+      hoc downloads. React-icons slugs (`fa6:FaX`) resolve automatically
+      in `assets.icons` — no staging step required.
+    - For academic, lab, and data presentations, lead with figures,
+      compact result tables, workflow diagrams, and concise sidebars. Use
+      `variant: scientific-figure` for multi-panel figure slides,
+      `variant: image-sidebar` for figure + interpretation slides, and
+      `variant: lab-run-results` for concordance/QC/run-summary tables
+      before reaching for generic card grids.
+    - Use generated imagery only when deliberate. It requires
+      `--allow-generated-images` plus OPENAI_API_KEY, and should land on a
+      standalone `variant: generated-image` slide with prompt/model/purpose
+      metadata visible.
+    - Run iterate_deck.py (max 3 loops) if the gate fails; do not
+      silently ship.
+
+    Before declaring done, confirm: outline exists as JSON, build was
+    done via a repo script, the QA loop ran (gate passed, visual-review
+    packet created when render tools are available, fresh-eyes inspection
+    was used when needed, placeholder grep matched nothing), and no package
+    installs were run during the task.
+
+policy:
+  allow_implicit_invocation: true
+
+dependencies:
+  tools:
+    - python3
+    - soffice          # LibreOffice, for render-based QA
+    - pdftoppm         # Poppler, for render-based QA
+    - node             # for the pptxgenjs renderer (default)

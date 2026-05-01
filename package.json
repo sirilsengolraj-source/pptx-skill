@@ -1,0 +1,59 @@
+{
+  "name": "presentation-skill",
+  "version": "0.1.5",
+  "description": "Open-source presentation skill for Codex, ChatGPT agents, and OpenAI-style agents that build, edit, and QA polished PowerPoint PPTX presentations, slides, and slide decks.",
+  "license": "Apache-2.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirilsengolraj-source/presentation-skill.git"
+  },
+  "homepage": "https://github.com/sirilsengolraj-source/presentation-skill#readme",
+  "bugs": {
+    "url": "https://github.com/sirilsengolraj-source/presentation-skill/issues"
+  },
+  "keywords": [
+    "codex-skill",
+    "codex-skills",
+    "codex-agent",
+    "chatgpt",
+    "chatgpt-agent",
+    "openai-agent",
+    "ai-agent",
+    "presentation-skill",
+    "powerpoint",
+    "powerpoint-deck-builder",
+    "powerpoint-skill",
+    "powerpoint-automation",
+    "pptx",
+    "pptx-skill",
+    "slides",
+    "slides-generator",
+    "slide-deck",
+    "slide-deck-generator",
+    "deck-builder",
+    "presentation",
+    "presentation-generator",
+    "presentation-design",
+    "presentation-agent",
+    "powerpoint-generator",
+    "pptx-generator",
+    "slide-generator",
+    "deck-generator",
+    "pptxgenjs",
+    "openai",
+    "image-generation"
+  ],
+  "scripts": {
+    "check:node": "node --check scripts/build_deck_pptxgenjs.js && node --check templates/pptxgenjs/slides.js",
+    "check:python": "python3 -m py_compile scripts/generate_openai_image.py scripts/asset_stage.py scripts/build_workspace.py scripts/init_deck_workspace.py scripts/preflight.py scripts/build_deck.py scripts/layout_lint.py scripts/render_slides.py scripts/render_mermaid.py scripts/design_rules_qa.py scripts/validate_planning.py scripts/verify_narration.py scripts/visual_review.py scripts/run_pptxgenjs_regression.py scripts/fetch_wikimedia_cc.py scripts/plan_research_assets.py",
+    "check:pptxgenjs-regression": "python3 scripts/run_pptxgenjs_regression.py --outdir /tmp/presentation-skill-pptxgenjs-regression"
+  },
+  "dependencies": {
+    "pptxgenjs": "^4.0.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-icons": "^5.6.0",
+    "sharp": "^0.34.5"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "title": "Artemis II Mission Update",
+  "subtitle": "NASA mission status through April 10, 2026",
+  "deck_style": {
+    "font_pair": "editorial_serif_v1",
+    "visual_density": "medium",
+    "emoji_mode": "none"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "Artemis II completed the first crewed Artemis lunar test flight",
+      "subtitle": "Apr 1 to Apr 10, 2026 | NASA official sources"
+    },
+    {
+      "type": "content",
+      "variant": "split",
+      "slide_intent": "message",
+      "visual_intent": "comparison",
+      "title": "Artemis II made Artemis operational",
+      "subtitle": "NASA used the mission to prove the human-rated stack in real flight conditions",
+      "bullets": [
+        "Artemis II was NASA's first crewed test flight in lunar space using SLS and Orion.",
+        "The crew completed a nearly 10-day mission around the Moon and back to Earth.",
+        "NASA described the mission as the first human trip to the Moon in more than half a century.",
+        "With the crew home, NASA shifted focus to assembling Artemis III."
+      ],
+      "highlights": [
+        "Launch: 6:35 p.m. EDT on April 1, 2026.",
+        "Splashdown: 5:07 p.m. PDT on April 10, 2026.",
+        "Farthest distance from Earth: 252,756 miles."
+      ],
+      "footer": "NASA official release, April 10, 2026"
+    },
+    {
+      "type": "content",
+      "variant": "matrix",
+      "slide_intent": "evidence",
+      "visual_intent": "comparison",
+      "title": "The crew blended command and partnership",
+      "subtitle": "Roles announced by NASA for the first Artemis crew",
+      "quadrants": [
+        {
+          "title": "Reid Wiseman",
+          "body": "Commander. Led mission execution and crew decisions aboard Orion."
+        },
+        {
+          "title": "Victor Glover",
+          "body": "Pilot. Supported vehicle checkout, handling tests, and flight operations."
+        },
+        {
+          "title": "Christina Koch",
+          "body": "Mission Specialist. Supported systems evaluation and science operations."
+        },
+        {
+          "title": "Jeremy Hansen",
+          "body": "Mission Specialist. Represented the Canadian Space Agency on the crew."
+        }
+      ],
+      "footer": "NASA Artemis crew profiles"
+    },
+    {
+      "type": "content",
+      "variant": "cards-3",
+      "slide_intent": "evidence",
+      "visual_intent": "comparison",
+      "title": "NASA's priorities were operational",
+      "subtitle": "The mission priorities document focused on what must work before lunar surface missions",
+      "cards": [
+        {
+          "title": "Crew Sustainment",
+          "body": "Demonstrate that systems and teams can sustain astronauts through flight and return.",
+          "accent": "accent_primary"
+        },
+        {
+          "title": "Systems and Ops",
+          "body": "Validate ground, launch, flight, and recovery operations essential to a crewed lunar campaign.",
+          "accent": "accent_secondary"
+        },
+        {
+          "title": "Hardware and Data",
+          "body": "Recover flight hardware and data to assess performance before later missions.",
+          "accent": "accent_primary"
+        }
+      ],
+      "footer": "NASA Artemis II Priorities and Objectives"
+    },
+    {
+      "type": "content",
+      "variant": "timeline",
+      "slide_intent": "process",
+      "visual_intent": "timeline",
+      "title": "The mission ran exactly where NASA needed it",
+      "subtitle": "A short but high-consequence test sequence from launch to recovery",
+      "milestones": [
+        {
+          "label": "Apr 1",
+          "title": "Launch",
+          "body": "Orion launched from Kennedy at 6:35 p.m. EDT."
+        },
+        {
+          "label": "Day 2",
+          "title": "Departure Burn",
+          "body": "After initial checkout, Orion fired its main engine and set course for the Moon."
+        },
+        {
+          "label": "Apr 6",
+          "title": "Lunar Flyby",
+          "body": "The crew passed 4,067 miles above the lunar surface and captured more than 7,000 images."
+        },
+        {
+          "label": "Apr 10",
+          "title": "Splashdown",
+          "body": "Orion splashed down off California at 5:07 p.m. PDT."
+        }
+      ],
+      "footer": "NASA Artemis II release timeline"
+    },
+    {
+      "type": "content",
+      "variant": "split",
+      "slide_intent": "decision",
+      "visual_intent": "comparison",
+      "title": "Artemis II materially derisks Artemis III",
+      "subtitle": "Flight results directly support the next mission's integrated landing architecture",
+      "bullets": [
+        "NASA validated Orion life support, critical crew survival systems, and extended-duration crew support operations.",
+        "The crew performed manual piloting and proximity operations that generate data for later rendezvous and docking work.",
+        "Reentry, parachute deployment, splashdown, and crew recovery all closed the end-to-end test loop.",
+        "The mission strengthened confidence in the vehicle, the teams, and the international operating model."
+      ],
+      "highlights": [
+        "Focus now shifts to Artemis III integration.",
+        "The mission provided real flight data, not just ground-model assumptions.",
+        "Human lunar return now rests on a proven crewed transport stack."
+      ],
+      "footer": "NASA release and mission objectives, status as of April 13, 2026"
+    },
+    {
+      "type": "content",
+      "variant": "chart",
+      "slide_intent": "evidence",
+      "visual_intent": "data",
+      "title": "Artemis II mission profile in one sourced view",
+      "subtitle": "Elapsed day from launch to splashdown, paired with post-flight mission facts",
+      "assets": {
+        "chart_data": "chart:mission_profile"
+      },
+      "message": "The flight was short by design, but it covered the checkpoints Artemis III depends on.",
+      "footer": "Artemis II sourced mission profile"
+    }
+  ]
+}

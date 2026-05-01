@@ -1,0 +1,54 @@
+{
+  "slides": [
+    {
+      "type": "title",
+      "title": "AI Operations Review",
+      "subtitle": "Reliable delivery with explicit QA"
+    },
+    {
+      "type": "section",
+      "title": "Execution Thesis",
+      "subtitle": "Tight scope, visible owners, and measurable progress"
+    },
+    {
+      "type": "content",
+      "variant": "split",
+      "title": "Strategic Focus",
+      "subtitle": "Primary narrative and operator checklist",
+      "bullets": [
+        "Constrain the initial release to one measurable workflow.",
+        "Define success metrics before expanding scope.",
+        "Run weekly review against shipping and QA signals.",
+        "Document every decision that should become default behavior."
+      ],
+      "highlights": [
+        "Publish blockers daily.",
+        "Escalate repeat defects within 24 hours."
+      ],
+      "footer": "Operate with explicit quality gates"
+    },
+    {
+      "type": "content",
+      "variant": "cards-3",
+      "title": "Core Pillars",
+      "subtitle": "What keeps the deck generator trustworthy",
+      "cards": [
+        {
+          "title": "Reliable Builder",
+          "body": "Use deterministic layout logic as the baseline path.",
+          "accent": "accent_primary"
+        },
+        {
+          "title": "Strict QA",
+          "body": "Fail on overflow, overlap, weak visual fill, and design rule regressions.",
+          "accent": "accent_secondary"
+        },
+        {
+          "title": "Benchmark Loop",
+          "body": "Re-run multiple synthetic builds before shipping renderer changes.",
+          "accent": "accent_primary"
+        }
+      ]
+    }
+  ]
+}
